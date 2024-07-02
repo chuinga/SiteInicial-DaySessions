@@ -162,6 +162,10 @@ input[type=text], select, textarea {
     }
   }
 
+  iframe {
+    width: 100%;
+  }
+
 footer {
     background-color: #38444d;
     color: #ffffffc8;
