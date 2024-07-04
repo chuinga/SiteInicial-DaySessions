@@ -1,124 +1,116 @@
 body {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: auto;
 }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #38444d;
-}
-
-nav li {
-    float: left;
-}
-
-nav li a,
-.dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav li a:hover,
-.dropdown:hover .dropbtn {
-    background-color: #75a7fc;
-}
-
-nav li.dropdown {
-    display: inline-block;
-}
-
-nav .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-nav .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-nav .dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-nav .dropdown:hover .dropdown-content {
-    display: block;
-}
-
 header {
     font-size: 20pt;
     background-color: rgb(117, 167, 253);
     text-align: center;
     color: white;
 }
-
 h1 {
     margin: auto;
 }
-
 h2 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin-left: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(56, 45, 247);
 }
-
-.center {
+.center{
     text-align: center;
-    font-size: 25px;
-    padding: 15px;
 }
+/* --------------------------------------------------------------------*/
+/*CENTRAR AS IMAGENS /*DA GALERIA*/
+.centrarimagens{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
 
-.flex-container {
+.texto{
+    text-align: justify;
+    text-indent: 1.2cm;
+    margin: 5px;
+  }
+
+/* --------------------------------------------------------------------*/
+/*GALERIA DE PÓKEMONS */
+/* --------------------------------------------------------------------*/
+.flex-container-galeria{
     display: flex;
+    /*background-color:  rgb(117, 167, 253);*/
 }
-
-.flex-container>div {
-    width: 150px;
+.flex-container-galeria>div{
+    width: 170px;
     background-color: #f1f1f1;
     margin: 10px;
     padding: 10px;
-    font-size: 30px;
+    /*font-size: 30px;*/
 }
-
-.imagenspokemons {
+.imagenspokemons{
     display: flex;
     width: 150px;
 }
-
 .imagenspokemons:hover {
     opacity: 80%;
 }
+/* --------------------------------------------------------------------*/
+/*TABELA DE POKÉMONS*/
+/* --------------------------------------------------------------------*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+tr:hover{
+    background-color: rgb(117, 167, 253);
+}
+/* --------------------------------------------------------------------*/
+/* RODAPÉ DO SITE*/
+/* --------------------------------------------------------------------*/
+footer{
+    background-color: #38444d;
+    width: 100%; /*largura*/
+    color: white; /*cor da letra*/
+    padding-top: 5px;
+}
+.bold{
+    font-weight: bold;
+}
+.grid-container-footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+.grid-itemfooter{
+    padding: 10px;
+    font-size: 12pt;
+    text-align: center;
+  }
 
-input[type=text],
-select,
-textarea {
+/* --------------------------------------------------------------------*/
+/*Formulário*/
+/* --------------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+input[type=text],select,textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
 }
-
-label {
+label{
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
-
-input[type=submit] {
-    background-color: #04AA6D;
+input[type=submit]{
+    background-color: rgb(117, 167, 253);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -126,38 +118,33 @@ input[type=submit] {
     cursor: pointer;
     float: right;
 }
-
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: rgb(117, 167, 253);
 }
-
-.container {
+.container{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
-
 .col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
 }
-
 .col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
 }
-
 /* Clear floats after the columns */
 .row::after {
     content: "";
     display: table;
     clear: both;
 }
-
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+
     .col-25,
     .col-75,
     input[type=submit] {
@@ -166,56 +153,54 @@ input[type=submit]:hover {
     }
 }
 
-iframe {
-    width: 100%;
+/* --------------------------------------------------------------------*/
+/* Barra de navegação  */
+/* --------------------------------------------------------------------*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+}
+nav li{
+    float: left;
 }
 
-table {
-    margin: 2rem 0;
-    width: 100%;
-    border-collapse: collapse;
+nav li a,.dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-th, td {
-    padding: 8px;
+nav li a:hover,.dropdown:hover .dropbtn{
+    background-color: rgb(117, 167, 253);
+}
+
+nav li.dropdown{
+    display: inline-block;
+}
+
+nav .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
     text-align: left;
 }
-
-th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: #6495ED;
+nav .dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
-
-.historia {
-    display: flex;
-    justify-content: space-around;
-    margin: 3%;
-}
-
-footer {
-    background-color: #38444d;
-    color: #ffffffc8;
-    padding-bottom: 20px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
-}
-
-.grid-container a {
-    color: #ffffffc8;
-}
-
-.grid-item {
-    padding: 10px;
-    font-size: 15px;
-    text-align: center;
-}
-
-.title {
-    font-weight: bolder;
-    font-size: 20px;
+nav .dropdown:hover .dropdown-content {
+    display: block;
 }

@@ -2,87 +2,89 @@
 <html lang="pt-pt">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salão de Pokémons</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão de Pokémons</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <nav class="navbar">
-    <img src="/img/logo.png" alt="Logo" class="logo" />
-    <ul>
-      <li><a href="/index.html">Início</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Pokemons</a>
-        <div class="dropdown-content">
-          <a href="/pikachu.html">Pikachu</a>
-          <a href="/bulbasaur.html">Bulbasaur</a>
-        </div>
-      </li>
-      <li>
-        <a href="/historia.html">História</a>
-      </li>
-      <li>
-        <a href="/contactos.html">Contactos</a>
-      </li>
-    </ul>
-  </nav>
-  <header>
-    <h1>Bulbasaur</h1>
-  </header>
-  <main>
-    <p class="center"><img src="img/bulbasaur.jpg" /></p>
-    <br />
-    <table>
-      <thead>
-          <tr>
-              <th>Nome</th>
-              <th>Tipo</th>
-              <th>Espécie</th>
-              <th>Altura</th>
-              <th>Peso</th>
-              <th>Habilidades</th>
-              <th>Origem do nome</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>Bulbasaur</td>
-              <td>GRASS/POISON</td>
-              <td>Seed Pokémon</td>
-              <td>0.7 m</td>
-              <td>6.9 kg</td>
-              <td>Overgrow</td>
-              <td>bulb (tipo de planta) <br />
-                saur (lagarto)</td>
-          </tr>
-      </tbody>
-  </table>
-  </main>
-  <footer>
-    <p class="center">
-      Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (Client-side)
-    </p>
-    <div class="grid-container">
-      <div class="grid-item title">Redes sociais</div>
-      <div class="grid-item title">Menu do site</div>
-      <div class="grid-item title">Ligações úteis</div>
-      <div class="grid-item title">Contactos</div>
-      <div class="grid-item"><a
-          href="https://www.facebook.com/PokemonUKGB/?brand_redir=230809307041021&locale=pt_PT">Facebook</a></div>
-      <div class="grid-item"><a href="/index.html">Início</a></div>
-      <div class="grid-item"><a href="https://www.citeforma.pt/">Citeforma</a></div>
-      <div class="grid-item"><a
-          href="https://www.mapquest.com/us/washington/pokemon-co-international-354806435">Morada</a></div>
-      <div class="grid-item"><a href="https://www.instagram.com/pokemon/">Instagram</a></div>
-      <div class="grid-item"><a href="/contactos.html">Contactos</a></div>
-      <div class="grid-item"><a href="https://www.w3schools.com/">W3Schools</a></div>
-      <div class="grid-item"><a
-          href="https://techcrunch.com/2022/04/19/samsung-is-making-a-pokemon-phone-because-why-not/">Telefone</a></div>
-      <div class="grid-item"><a href="https://www.youtube.com/channel/UCFctpiB_Hnlk3ejWfHqSm6Q">Youtube</a></div>
-    </div>
-  </footer>
-</body>
+    <img src="img/logo.png">
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Pokémons</a>
+                <div class="dropdown-content">
+                    <a href="bulbasaur.html">Bulbasaur</a>
+                    <a href="pikachu.html">Pikachu</a>
+                </div>
+            </li>
+            <li><a href="pokemons.html">História</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+    <!--cabeçalho da página-->
+    <header>
+        <h1>Bulbasaur</h1>
+    </header>
 
+    <main>
+        <p class="center"><img src="img/bulbasaur.jpg"></p>
+        <br>
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Espécie</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>Habilidades</th>
+                <th>Origem do nome</th>
+            </tr>
+            <tr>
+                <td>Bulbasaur</td>
+                <td>GRASS, POISON</td>
+                <td>Seed Pokémon</td>
+                <td>0.7 m</td>
+                <td>6.9 kg</td>
+                <td>Overgrow</td>
+                <td><em>bulb</em> (tipo de planta) <br>
+                    saur (lagarto)</td>
+            </tr>
+        </table>
+        <p></p>
+    </main>
+
+    <!--rodapé-->
+    <footer>
+        <p class="center">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (Client-side)</p>
+
+        <div class="grid-container-footer">
+            <div class="grid-itemfooter">
+                <p class="bold">Redes Sociais</p>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Youtube</p>
+            </div>
+            <div class="grid-itemfooter">
+                <p class="bold">Menu do site</p>
+                <p>Início</p>
+                <p>Contactos</p>
+            </div>
+            <div class="grid-itemfooter">
+                <p class="bold">Ligações úteis</p>
+                <p>Citeforma</p>
+                <p>W3Schools</p>
+            </div>
+            <div class="grid-itemfooter">
+                <p class="bold">Contactos</p>
+                <p>Morada</p>
+                <p>Telefone</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
