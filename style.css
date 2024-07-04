@@ -172,6 +172,22 @@ iframe {
     width: 100%;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #6495ED;
+}
+
 footer {
     background-color: #38444d;
     color: #ffffffc8;
