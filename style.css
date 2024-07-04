@@ -173,6 +173,7 @@ iframe {
 }
 
 table {
+    margin: 2rem 0;
     width: 100%;
     border-collapse: collapse;
 }
