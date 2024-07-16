@@ -204,3 +204,82 @@ nav .dropdown-content a:hover {
 nav .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+
+/* --------------------------------------------------------------------*/
+/* Mapa Leaflet*/
+/* --------------------------------------------------------------------*/
+#map{
+    height: 400px;
+    width: 100%;
+}
+
+/* --------------------------------------------------------------------*/
+/* Equipa*/
+/* --------------------------------------------------------------------*/
+.column-equipa{
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }  
+  @media screen and (max-width: 650px) {
+    .column-equipa{
+      width: 100%;
+      display: block;
+    }
+  }
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+.container-equipa{
+    padding: 0 16px;
+  }
+  
+.container-equipa::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.title {
+    color: grey;
+  }
+  
+.button-equipa{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+.button-equipa:hover {
+    background-color: rgb(117, 167, 253);
+}
+
+
+/* --------------------------------------------------------------------*/
+/* Botões História*/
+/* --------------------------------------------------------------------*/
+.botao{
+    background-color: #38444d;
+    color: white;
+    font-weight: bold;
+}
+.botao:hover{
+    background-color: rgb(117, 167, 253);
+}
+
+
+
+.tamanho-imagem-slider{
+    width: 300px; 
+    height: 200px;
+}

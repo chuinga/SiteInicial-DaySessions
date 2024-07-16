@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salão de Pokémons</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!--mapa Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
+
+    <!--favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
     <img src="img/logo.png">
+
     <!-- Barra de navegação -->
     <nav>
         <ul>
@@ -25,6 +40,7 @@
             <li><a href="contactos.html">Contactos</a></li>
         </ul>
     </nav>
+
     <!--cabeçalho da página-->
     <header>
         <h1>Comunica com a nossa equipa</h1>
@@ -90,11 +106,95 @@
 
 
         <h2>Onde nos podes encontrar?</h2>
-        <!-- mapa google -->
+        <!-- mapa google 
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10659.968109456815!2d-8.641950962809368!3d40.64729944811099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23994d8a9da6dd%3A0x202298f6500b114b!2sPokeBox!5e1!3m2!1spt-PT!2spt!4v1719927270239!5m2!1spt-PT!2spt"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        -->
 
+        <!--mapa do Leaflet -->
+        <div id="map">
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+            <script>
+                var map = L.map('map').setView([40.64544, -8.64408], 13); // Coordenadas
 
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
 
+                L.marker([40.64544, -8.64408]).addTo(map)
+                    .bindPopup('Pokebox') //Nome pretendido
+                    .openPopup();
+            </script>
+        </div>
+        
 
+        <!-- A nossa equipa wm 5 colunas -->
+        <h2>A nossa equipa</h2>
+        <div class="row">
+            <div class="column-equipa">
+                <div class="card">
+                    <img src="img/bola.jpg" alt="Jane" style="width:100%">
+                    <div class="container-equipa">
+                        <h2>Jane Doe</h2>
+                        <p class="title">CEO & Founder</p>
+                        <p></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-equipa">
+                <div class="card">
+                    <img src="img/bola.jpg" alt="Mike" style="width:100%">
+                    <div class="container-equipa">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Art Director</p>
+                        <p></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-equipa">
+                <div class="card">
+                    <img src="img/bola.jpg" alt="Mike" style="width:100%">
+                    <div class="container-equipa">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Art Director</p>
+                        <p></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-equipa">
+                <div class="card">
+                    <img src="img/bola.jpg" alt="Mike" style="width:100%">
+                    <div class="container-equipa">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Art Director</p>
+                        <p></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-equipa">
+                <div class="card">
+                    <img src="img/bola.jpg" alt="John" style="width:100%">
+                    <div class="container-equipa">
+                        <h2>John Doe</h2>
+                        <p class="title">Designer</p>
+                        <p></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
     </main>
 
@@ -127,4 +227,5 @@
         </div>
     </footer>
 </body>
+
 </html>
