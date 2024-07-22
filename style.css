@@ -2,95 +2,123 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: auto;
 }
+
 header {
     font-size: 20pt;
     background-color: rgb(117, 167, 253);
     text-align: center;
     color: white;
 }
+
 h1 {
     margin: auto;
 }
+
 h2 {
     margin-left: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(56, 45, 247);
 }
-.center{
+
+.center {
     text-align: center;
 }
+
 /* --------------------------------------------------------------------*/
 /*CENTRAR AS IMAGENS /*DA GALERIA*/
-.centrarimagens{
+.centrarimagens {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-  }
+}
 
-.texto{
+.texto {
     text-align: justify;
     text-indent: 1.2cm;
     margin: 5px;
-  }
+}
 
 /* --------------------------------------------------------------------*/
 /*GALERIA DE PÓKEMONS */
 /* --------------------------------------------------------------------*/
-.flex-container-galeria{
+.flex-container-galeria {
     display: flex;
     /*background-color:  rgb(117, 167, 253);*/
 }
-.flex-container-galeria>div{
+
+.flex-container-galeria>div {
     width: 170px;
     background-color: #f1f1f1;
     margin: 10px;
     padding: 10px;
     /*font-size: 30px;*/
 }
-.imagenspokemons{
+
+.imagenspokemons {
     display: flex;
     width: 150px;
 }
+
 .imagenspokemons:hover {
     opacity: 80%;
 }
+
 /* --------------------------------------------------------------------*/
 /*TABELA DE POKÉMONS*/
 /* --------------------------------------------------------------------*/
-table{
+table {
     border-collapse: collapse;
     width: 100%;
 }
-th,td{
+
+th,
+td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #DDD;
 }
-tr:hover{
+
+tr:hover {
     background-color: rgb(117, 167, 253);
 }
+
 /* --------------------------------------------------------------------*/
 /* RODAPÉ DO SITE*/
 /* --------------------------------------------------------------------*/
-footer{
+footer {
     background-color: #38444d;
-    width: 100%; /*largura*/
-    color: white; /*cor da letra*/
+    width: 100%;
+    /*largura*/
+    color: white;
+    /*cor da letra*/
     padding-top: 5px;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
-.grid-container-footer{
+
+.grid-container-footer {
     display: grid;
     grid-template-columns: auto auto auto auto;
-  }
-.grid-itemfooter{
+}
+
+.grid-itemfooter {
     padding: 10px;
     font-size: 12pt;
     text-align: center;
-  }
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: rgb(117, 167, 253);
+}
+
 
 /* --------------------------------------------------------------------*/
 /*Formulário*/
@@ -98,18 +126,23 @@ footer{
 * {
     box-sizing: border-box;
 }
-input[type=text],select,textarea{
+
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
 }
-label{
+
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
-input[type=submit]{
+
+input[type=submit] {
     background-color: rgb(117, 167, 253);
     color: white;
     padding: 12px 20px;
@@ -118,30 +151,36 @@ input[type=submit]{
     cursor: pointer;
     float: right;
 }
+
 input[type=submit]:hover {
     background-color: rgb(117, 167, 253);
 }
-.container{
+
+.container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
+
 .col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
 }
+
 .col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
 }
+
 /* Clear floats after the columns */
 .row::after {
     content: "";
     display: table;
     clear: both;
 }
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
@@ -156,18 +195,20 @@ input[type=submit]:hover {
 /* --------------------------------------------------------------------*/
 /* Barra de navegação  */
 /* --------------------------------------------------------------------*/
-nav ul{
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #38444d;
 }
-nav li{
+
+nav li {
     float: left;
 }
 
-nav li a,.dropbtn{
+nav li a,
+.dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -175,15 +216,16 @@ nav li a,.dropbtn{
     text-decoration: none;
 }
 
-nav li a:hover,.dropdown:hover .dropbtn{
+nav li a:hover,
+.dropdown:hover .dropbtn {
     background-color: rgb(117, 167, 253);
 }
 
-nav li.dropdown{
+nav li.dropdown {
     display: inline-block;
 }
 
-nav .dropdown-content{
+nav .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -191,6 +233,7 @@ nav .dropdown-content{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+
 nav .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -198,9 +241,11 @@ nav .dropdown-content a {
     display: block;
     text-align: left;
 }
+
 nav .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
+
 nav .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -210,7 +255,7 @@ nav .dropdown:hover .dropdown-content {
 /* --------------------------------------------------------------------*/
 /* Mapa Leaflet*/
 /* --------------------------------------------------------------------*/
-#map{
+#map {
     height: 400px;
     width: 100%;
 }
@@ -218,37 +263,40 @@ nav .dropdown:hover .dropdown-content {
 /* --------------------------------------------------------------------*/
 /* Equipa*/
 /* --------------------------------------------------------------------*/
-.column-equipa{
+.column-equipa {
     float: left;
     width: 20%;
     margin-bottom: 16px;
     padding: 0 8px;
-  }  
-  @media screen and (max-width: 650px) {
-    .column-equipa{
-      width: 100%;
-      display: block;
+}
+
+@media screen and (max-width: 650px) {
+    .column-equipa {
+        width: 100%;
+        display: block;
     }
-  }
-.card{
+}
+
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-.container-equipa{
+}
+
+.container-equipa {
     padding: 0 16px;
-  }
-  
-.container-equipa::after, .row::after {
+}
+
+.container-equipa::after,
+.row::after {
     content: "";
     clear: both;
     display: table;
-  }
-  
+}
+
 .title {
     color: grey;
-  }
-  
-.button-equipa{
+}
+
+.button-equipa {
     border: none;
     outline: 0;
     display: inline-block;
@@ -258,8 +306,8 @@ nav .dropdown:hover .dropdown-content {
     text-align: center;
     cursor: pointer;
     width: 100%;
-  }
-  
+}
+
 .button-equipa:hover {
     background-color: rgb(117, 167, 253);
 }
@@ -268,26 +316,29 @@ nav .dropdown:hover .dropdown-content {
 /* --------------------------------------------------------------------*/
 /* Botões História*/
 /* --------------------------------------------------------------------*/
-.botao{
+.botao {
     background-color: #38444d;
     color: white;
     font-weight: bold;
 }
-.botao:hover{
+
+.botao:hover {
     background-color: rgb(117, 167, 253);
 }
 
 
 
-.tamanho-imagem-slider{
-    width: 300px; 
+.tamanho-imagem-slider {
+    width: 300px;
     height: 200px;
 }
 
-/* --------------------------------------------------------------------*/
-/* Números */
-/* --------------------------------------------------------------------*/
 
+
+
+/* --------------------------------------------------------------------*/
+/*  Números */
+/* --------------------------------------------------------------------*/
 section {
     padding: 10px;
     width: 90%;
@@ -295,32 +346,105 @@ section {
     margin: 0 auto;
     display: grid;
     gap: 10px;
-    /* intervalo entre as colunas */
+    /*intervalo entre as colunas*/
 }
-
 @media screen and (min-width: 992px) {
     section {
         grid-template-columns: auto auto auto;
     }
 }
-
 article {
-    background: #f8f2f2;
+    background: rgb(248, 242, 242);
     padding: 20px;
-    border-bottom: 4px solid #75a7fd;
+    border-bottom: 4px solid rgb(117, 167, 253);
     text-align: center;
 }
-
 article span {
     font-size: 40pt;
-    font-weight: bold;
+    font-weight: bold;   
 }
-
 article p {
     margin: 0;
     font-size: 20pt;
 }
-
-.de {
+.de{
     font-size: 20pt;
 }
+
+
+
+/* --------------------------------------------------------------------*/
+/* Image Comparison Slider - página index */
+/* --------------------------------------------------------------------*/
+.tamanho-imagem-slider{
+    width: 300px; 
+    height: 200px;
+}
+.img-comp-container{
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+.img-comp-img{
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+.img-comp-slider{
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color:  rgb(117, 167, 253);
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+/* --------------------------------------------------------------------*/
+/* Galeria*/
+/* --------------------------------------------------------------------*/
+     /* The grid com 5 colunas */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+  }  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }  
+  .column img:hover {
+    opacity: 1;
+  }  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
+  /* Container da imagem grande */
+  .containergaleria {
+    position: relative;
+    display: none;
+  }
+    /* Texto (na imagem grande) */
+  #imgtext {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+  }
+    /* Botão de fechar (na imagem grande) */
+  .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+

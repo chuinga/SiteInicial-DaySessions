@@ -42,35 +42,41 @@
         <h1>Os Pokémons</h1>
     </header>
     <main>
-        <h2>1.º Exemplo de javascript</h2>
+        <!-- Exemplo n.º 1 - JavaScript pelo método interno -->
+        <h2>1.º Exemplo de Javascript</h2>
         <p class="texto">N.º de Pokémons no site <strong><em>Salão de Pokémons</em></strong>:
-            <strong id="contagem">0</strong>
+            <strong id="contagem"> 0</strong>
         </p>
-        <button id="mais">mais pokemons</button>
-        <button id="menos">menos pokemons</button>
+
+        <!-- mudança do valor da contagem através de JS -->
         <script>
-            document.querySelector("#mais").onclick = function () {
-                document.getElementById("contagem").innerText = parseInt(document.getElementById("contagem").innerText) + 1;
-            }
-            document.querySelector("#menos").onclick = function () {
-                document.getElementById("contagem").innerText = parseInt(document.getElementById("contagem").innerText) - 1;
-            }
             document.getElementById("contagem").innerText = 10;
         </script>
+        <!--document diz respeito a toda a página-->
+        <!--getElementById vai buscar o ID com o nome contagem-->
+        <!--innerText é a propriedade que vai alterar o valor para o que se escrever-->
+        <!---------------------------------------------------------------------------->
 
+        <!-- Exemplo n.º 2 JavaScript pelo método interno -->
         <h2>2.º Exemplo de Javascript</h2>
         <p id="idade" class="texto"></p>
-        <script>
-            let anoCriacao, anoActual, idade;
-            anoCriacao = 1989;
-            anoActual = new Date().getFullYear();
-            idade = anoActual - anoCriacao;
-            document.getElementById("idade").innerHTML =
-                "Os Pokémons, de acordo com a <em>Wikipédia</em>, surgiram há <strong>" +
-                idade + "</strong> anos.";
-        </script>
 
+        <script>
+            let dataCriacao, dataAtual, idade;
+            dataCriacao = 1989;
+            dataAtual = 2024;
+            idade = dataAtual - dataCriacao;
+            document.getElementById("idade").innerHTML =
+                "Os Pokémons, de acordo com a <em>Wikipédia</em>, surgiram há <strong>"
+                + idade + " </strong> anos.";  
+        </script>
+        <!--innerHTML é a propriedade que vai buscar ou alterar o valor do elemento-->
+        <!---------------------------------------------------------------------------->
+
+
+        <!-- Exemplo n.º 3 JavaScript pelo método interno -->
         <h2>3.º Exemplo de Javascript</h2>
+        <!-- imagens tipo galeria -->
         <div id="imagens">
             <p class="center">
                 <img id="poke" src="img/bola.jpg" class="tamanho-imagem-slider">
@@ -79,13 +85,22 @@
                 <button onclick="document.getElementById('poke').src='img/cartas.jpg'" class="botao">cartas</button>
             </p>
         </div>
+        <!---------------------------------------------------------------------------->
 
-        <h2>4.º Exemplo de Javascript</h2>
+        <!-- Exemplo n.º 4 JavaScript pelo método externo -->
+        <!-- ficheiro externo: scripts/historia.js-->
+
+
         <div id="origem"></div>
         <div id="texto" class="texto"></div>
         <script src="scripts/historia.js"></script>
+        <!---------------------------------------------------------------------------->
 
-        <h2>5.º Exemplo de Javascript</h2>
+
+
+        <!-- Exemplo n.º 5 JavaScript pelo método externo -->
+        <!-- números -->
+
         <h2>Em números</h2>
         <section>
             <article>
@@ -110,24 +125,26 @@
 
     <!--rodapé-->
     <footer>
-        <p class="center">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (Client-side)</p>
+        <p class="center">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (<em>Client-side</em>)
+        </p>
 
         <div class="grid-container-footer">
             <div class="grid-itemfooter">
                 <p class="bold">Redes Sociais</p>
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>Youtube</p>
+                <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                <p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
             </div>
             <div class="grid-itemfooter">
                 <p class="bold">Menu do site</p>
-                <p>Início</p>
-                <p>Contactos</p>
+                <p><a href="index.html">Início</a></p>
+                <p><a href="historia.html">História</a></p>
+                <p><a href="contactos.html">Contactos</a></p>
             </div>
             <div class="grid-itemfooter">
                 <p class="bold">Ligações úteis</p>
-                <p>Citeforma</p>
-                <p>W3Schools</p>
+                <p><a href="https://www.citeforma.pt/" target="_blank">Citeforma</a></p>
+                <p><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
             </div>
             <div class="grid-itemfooter">
                 <p class="bold">Contactos</p>
