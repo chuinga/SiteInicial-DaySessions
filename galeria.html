@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!--scripts-->
-    <script src="scripts/imagecomparison.js"></script>
+    <script src="scripts/galeria.js"></script>
 </head>
 
 <body>
@@ -42,49 +42,41 @@
     </nav>
     <!--cabeçalho da página-->
     <header>
-        <h1>Como capturar o seu Pokémon?</h1>
+        <h1>Galeria</h1>
     </header>
-
     <main>
-        <!--
-        <p class="center"><img src="img/bola.jpg"></p>
--->
-        <br>
-        <div class="centrarimagens">
-            <!-- Image Comparison Slider - W3schools -->
-            <div class="img-comp-container">
-                <div class="img-comp-img">
-                    <img src="img/bola.jpg" class="tamanho-imagem-slider">
-                </div>
-                <div class="img-comp-img img-comp-overlay">
-                    <img src="img/magikarp.png" class="tamanho-imagem-slider">
-                </div>
+        <!-- Galeria com 5 colunas -->
+        <div class="row">
+            <div class="column">
+                <img src="img/bulbasaur.jpg" alt="Bulbasaur" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/charmander.jpg" alt="Charmander" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/magikarp.png" alt="Magikarp" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/pikachu.jpg" alt="Pikachu" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/cartas.jpg" alt="Cartas" style="width:100%" onclick="myFunction(this);">
             </div>
         </div>
-        <!--Executa a função criada no Javascript-->
-        <script>initComparisons();</script>
 
-
-
-        <h2> Primeira Geração</h2>
-        <div class="flex-container-galeria">
-            <div><a href="pikachu.html"><img src="img/pikachu.jpg" class="imagenspokemons"></a></div>
-            <div><a href="bulbasaur.html"><img src="img/bulbasaur.jpg" class="imagenspokemons"></a></div>
-            <div><a href="#"><img src="img/magikarp.png" class="imagenspokemons"></a></div>
-            <div><a href="#"><img src="img/charmander.jpg" class="imagenspokemons"></a></div>
-            <div><a href="#"><img src="img/pokemon.jpg" class="imagenspokemons"></a></div>
-            <div><a href="#"><img src="img/pokemon.jpg" class="imagenspokemons"></a></div>
-            <div><a href="#"><img src="img/pokemon.jpg" class="imagenspokemons"></a></div>
+        <div class="containergaleria">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
         </div>
-        <h2>Segunda Geração</h2>
-        <ul>
-            <li>Chikorita</li>
-            <li>Pupitar</li>
-            <li>Slugma</li>
-        </ul>
+
+        <script>
+            myFunction(imgs);
+        </script>
+
     </main>
 
-    <!------rodapé-------->
+    <!--rodapé-->
     <footer>
         <p class="center">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (<em>Client-side</em>)
         </p>

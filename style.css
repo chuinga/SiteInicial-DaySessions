@@ -345,8 +345,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    gap: 10px;
-    /*intervalo entre as colunas*/
+    gap: 10px;    /*intervalo entre as colunas*/
 }
 @media screen and (min-width: 992px) {
     section {
