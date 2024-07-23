@@ -1,449 +1,651 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: auto;
+  background-color: white;
 }
 
 header {
-    font-size: 20pt;
-    background-color: rgb(117, 167, 253);
-    text-align: center;
-    color: white;
+  font-size: 20pt;
+  background-color: rgb(117, 167, 253);
+  text-align: center;
+  color: white;
 }
 
 h1 {
-    margin: auto;
+  margin: auto;
 }
 
 h2 {
-    margin-left: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(56, 45, 247);
+  margin-left: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(56, 45, 247);
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 /* --------------------------------------------------------------------*/
 /*CENTRAR AS IMAGENS /*DA GALERIA*/
 .centrarimagens {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 
 .texto {
-    text-align: justify;
-    text-indent: 1.2cm;
-    margin: 5px;
+  text-align: justify;
+  text-indent: 1.2cm;
+  margin: 5px;
 }
 
 /* --------------------------------------------------------------------*/
 /*GALERIA DE PÓKEMONS */
 /* --------------------------------------------------------------------*/
 .flex-container-galeria {
-    display: flex;
-    /*background-color:  rgb(117, 167, 253);*/
+  display: flex;
+  /*background-color:  rgb(117, 167, 253);*/
 }
 
 .flex-container-galeria>div {
-    width: 170px;
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 10px;
-    /*font-size: 30px;*/
+  width: 170px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 10px;
+  /*font-size: 30px;*/
 }
 
 .imagenspokemons {
-    display: flex;
-    width: 150px;
+  display: flex;
+  width: 150px;
 }
 
 .imagenspokemons:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 /* --------------------------------------------------------------------*/
 /*TABELA DE POKÉMONS*/
 /* --------------------------------------------------------------------*/
 table {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 th,
 td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #DDD;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
 }
 
 tr:hover {
-    background-color: rgb(117, 167, 253);
+  background-color: rgb(117, 167, 253);
 }
 
 /* --------------------------------------------------------------------*/
 /* RODAPÉ DO SITE*/
 /* --------------------------------------------------------------------*/
 footer {
-    background-color: #38444d;
-    width: 100%;
-    /*largura*/
-    color: white;
-    /*cor da letra*/
-    padding-top: 5px;
+  background-color: #38444d;
+  width: 100%;
+  /*largura*/
+  color: white;
+  /*cor da letra*/
+  padding-top: 5px;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .grid-container-footer {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .grid-itemfooter {
-    padding: 10px;
-    font-size: 12pt;
-    text-align: center;
+  padding: 10px;
+  font-size: 12pt;
+  text-align: center;
 }
 
-footer a{
-    color: white;
-    text-decoration: none;
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
-footer a:hover{
-    color: rgb(117, 167, 253);
+footer a:hover {
+  color: rgb(117, 167, 253);
 }
 
+.branco{
+  background-color: white;
+  color: #38444d;
+  padding-top: 10px;
+}
 
 /* --------------------------------------------------------------------*/
 /*Formulário*/
 /* --------------------------------------------------------------------*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 input[type=text],
 select,
 textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
 label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
 input[type=submit] {
-    background-color: rgb(117, 167, 253);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+  background-color: rgb(117, 167, 253);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
 
 input[type=submit]:hover {
-    background-color: rgb(117, 167, 253);
+  background-color: rgb(117, 167, 253);
 }
 
 .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
 
 .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
+  float: left;
+  width: 75%;
+  margin-top: 6px;
 }
 
 /* Clear floats after the columns */
 .row::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
-    .col-25,
-    .col-75,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 /* --------------------------------------------------------------------*/
 /* Barra de navegação  */
 /* --------------------------------------------------------------------*/
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #38444d;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
 }
 
 nav li {
-    float: left;
+  float: left;
 }
 
 nav li a,
 .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 nav li a:hover,
 .dropdown:hover .dropbtn {
-    background-color: rgb(117, 167, 253);
+  background-color: rgb(117, 167, 253);
 }
 
 nav li.dropdown {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 nav .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 nav .dropdown-content a:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 nav .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
-
-
-
-/* --------------------------------------------------------------------*/
-/* Mapa Leaflet*/
-/* --------------------------------------------------------------------*/
-#map {
-    height: 400px;
-    width: 100%;
-}
-
-/* --------------------------------------------------------------------*/
-/* Equipa*/
-/* --------------------------------------------------------------------*/
-.column-equipa {
-    float: left;
-    width: 20%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-    .column-equipa {
-        width: 100%;
-        display: block;
-    }
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container-equipa {
-    padding: 0 16px;
-}
-
-.container-equipa::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.title {
-    color: grey;
-}
-
-.button-equipa {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
-
-.button-equipa:hover {
-    background-color: rgb(117, 167, 253);
-}
-
-
-/* --------------------------------------------------------------------*/
-/* Botões História*/
-/* --------------------------------------------------------------------*/
-.botao {
-    background-color: #38444d;
-    color: white;
-    font-weight: bold;
-}
-
-.botao:hover {
-    background-color: rgb(117, 167, 253);
-}
-
-
-
-.tamanho-imagem-slider {
-    width: 300px;
-    height: 200px;
-}
-
-
-
-
-/* --------------------------------------------------------------------*/
-/*  Números */
-/* --------------------------------------------------------------------*/
-section {
-    padding: 10px;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    gap: 10px;    /*intervalo entre as colunas*/
-}
-@media screen and (min-width: 992px) {
-    section {
-        grid-template-columns: auto auto auto;
-    }
-}
-article {
-    background: rgb(248, 242, 242);
-    padding: 20px;
-    border-bottom: 4px solid rgb(117, 167, 253);
-    text-align: center;
-}
-article span {
-    font-size: 40pt;
-    font-weight: bold;   
-}
-article p {
-    margin: 0;
-    font-size: 20pt;
-}
-.de{
-    font-size: 20pt;
-}
-
 
 
 /* --------------------------------------------------------------------*/
 /* Image Comparison Slider - página index */
 /* --------------------------------------------------------------------*/
-.tamanho-imagem-slider{
-    width: 300px; 
-    height: 200px;
+.tamanho-imagem-slider {
+  width: 300px;
+  height: 200px;
 }
-.img-comp-container{
+
+.img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 200px;
+  /*should be the same height as the images*/
 }
-.img-comp-img{
+
+.img-comp-img {
   position: absolute;
   width: auto;
   height: auto;
-  overflow:hidden;
+  overflow: hidden;
 }
-.img-comp-slider{
+
+.img-comp-slider {
   position: absolute;
-  z-index:9;
+  z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  background-color:  rgb(117, 167, 253);
+  background-color: rgb(117, 167, 253);
   opacity: 0.7;
   border-radius: 50%;
 }
 
 /* --------------------------------------------------------------------*/
+/* Mapa Leaflet*/
+/* --------------------------------------------------------------------*/
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------*/
+/* Botões História*/
+/* --------------------------------------------------------------------*/
+.botao {
+  background-color: #38444d;
+  color: white;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: rgb(117, 167, 253);
+}
+
+
+/* --------------------------------------------------------------------*/
 /* Galeria*/
 /* --------------------------------------------------------------------*/
-     /* The grid com 5 colunas */
-  .column {
-    float: left;
-    width: 20%;
-    padding: 10px;
-  }  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-  }  
-  .column img:hover {
-    opacity: 1;
-  }  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }  
-  /* Container da imagem grande */
-  .containergaleria {
-    position: relative;
-    display: none;
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Container da imagem grande */
+.containergaleria {
+  position: relative;
+  display: none;
+}
+
+/* Texto (na imagem grande) */
+#imgtext {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Botão de fechar (na imagem grande) */
+.closebtn {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+/* --------------------------------------------------------------------*/
+/* Equipa*/
+/* --------------------------------------------------------------------*/
+.column-equipa {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column-equipa {
+    width: 100%;
+    display: block;
   }
-    /* Texto (na imagem grande) */
-  #imgtext {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    color: white;
-    font-size: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-equipa {
+  padding: 0 16px;
+}
+
+.container-equipa::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button-equipa {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-equipa:hover {
+  background-color: rgb(117, 167, 253);
+}
+
+
+
+
+
+/* --------------------------------------------------------------------*/
+/* Jogo de Pokémons*/
+/* --------------------------------------------------------------------*/
+
+#tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#tabuleiro>div {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(117, 167, 253);
+  cursor: pointer;
+}
+
+#tabuleiro>div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#tabuleiro>div.virada img {
+  opacity: 1;
+}
+
+#tabuleiro>div .cover {
+  /*background: #ccc;*/
+  background-image: url('img/jogo_memoria/carta.svg');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#controlos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* --------------------------------------------------------------------*/
+/*  Números */
+/* --------------------------------------------------------------------*/
+section {
+  padding: 10px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  /*intervalo entre as colunas*/
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    grid-template-columns: auto auto auto;
   }
-    /* Botão de fechar (na imagem grande) */
-  .closebtn {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
+}
+
+article {
+  background: rgb(248, 242, 242);
+  padding: 20px;
+  border-bottom: 4px solid rgb(117, 167, 253);
+  text-align: center;
+}
+
+article span {
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+article p {
+  margin: 0;
+  font-size: 20pt;
+}
+
+.de {
+  font-size: 20pt;
+}
+
+
+
+/* --------------------------------------------------------------------*/
+/*  Jogo - Quiz */
+/* --------------------------------------------------------------------*/
+
+.jogo {
+  /*background-color: #38444d;*/
+  width: 100%;
+  min-width: 330px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+  top: 100px;
+}
+
+.perguntas-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pergunta {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.respostas-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 16px;
+}
+
+.resposta:disabled {
+  cursor: not-allowed;
+}
+
+.proxima-pergunta {
+  margin-top: 32px;
+}
+
+.button {
+  background-color: #38444d;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  height: 50px;
+  padding: 0 40px;
+  transition: filter 0.1s;
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+.final-message {
+  font-size: 20px;
+  text-align: center;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.esconder {
+  display: none;
+}
+
+.correto {
+  color: #09f56f;
+}
+
+.incorreto {
+  color: #f81010;
+}
+
+button {
+  cursor: pointer;
+}
+
+.botaoquiz{
+  padding: 20px;
+  font-size: 20pt;
+  min-width: 200px;
+}
+
+
+
+/* --------------------------------------------------------------------*/
+/*  Jogo - Adivinhas */
+/* --------------------------------------------------------------------*/
+#fundoperguntas{
+  background-image: url('img/perguntas.jpg');
+  width: 100%;
+  height: 500px;
+}
+
+.botaoadivinhar{
+  padding: 20px;
+  font-size: 20pt;
+  position: relative;
+  top:180px;
+  min-width: 200px;
+}
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* --------------------------------------------------------------------*/
+/*  Imagem responsiva */
+/* --------------------------------------------------------------------*/
+.responsive {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
 

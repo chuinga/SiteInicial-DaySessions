@@ -16,9 +16,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
-    <!--scripts-->
-    <script src="scripts/galeria.js"></script>
 </head>
 
 <body>
@@ -37,6 +34,14 @@
             </li>
             <li><a href="historia.html">História</a></li>
             <li><a href="galeria.html">Galeria</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Jogos</a>
+                <div class="dropdown-content">
+                    <a href="adivinhar_numero.html">Adivinhar</a>
+                    <a href="quiz.html">Quiz</a>
+                    <a href="jogo_memoria.html">Memória</a>
+                </div>
+            </li>
             <li><a href="contactos.html">Contactos</a></li>
         </ul>
     </nav>
@@ -71,16 +76,22 @@
         </div>
 
         <script>
-            myFunction(imgs);
+            function myFunction(imgs){
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+            }
         </script>
+
+
+
 
     </main>
 
     <!--rodapé-->
     <footer>
-        <p class="center">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (<em>Client-side</em>)
-        </p>
-
         <div class="grid-container-footer">
             <div class="grid-itemfooter">
                 <p class="bold">Redes Sociais</p>
@@ -92,6 +103,7 @@
                 <p class="bold">Menu do site</p>
                 <p><a href="index.html">Início</a></p>
                 <p><a href="historia.html">História</a></p>
+                <p><a href="galeria.html">Galeria</a></p>
                 <p><a href="contactos.html">Contactos</a></p>
             </div>
             <div class="grid-itemfooter">
@@ -105,6 +117,8 @@
                 <p>Telefone</p>
             </div>
         </div>
+        <p class="center branco">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (<em>Client-side</em>)
+        </p>
     </footer>
 </body>
 

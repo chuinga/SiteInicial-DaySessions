@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt-pt"> <!--idioma-->
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salão de Pokémons</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-    <!--mapa Leaflet-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
+    <meta charset="utf-8"> <!-- Codificação em charset UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--responsividade - escala 100%-->
+    <title>Salão de Pokémons</title> <!-- título do separador -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- ligação à folha de estilos -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> <!--mapa Leaflet-->
 
     <!--favicon -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
@@ -20,11 +19,12 @@
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <img src="img/logo.png">
-
     <!-- Barra de navegação -->
     <nav>
         <ul>
@@ -38,17 +38,21 @@
             </li>
             <li><a href="historia.html">História</a></li>
             <li><a href="galeria.html">Galeria</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Jogos</a>
+                <div class="dropdown-content">
+                    <a href="adivinhar_numero.html">Adivinhar</a>
+                    <a href="quiz.html">Quiz</a>
+                    <a href="jogo_memoria.html">Memória</a>
+                </div>
+            </li>
             <li><a href="contactos.html">Contactos</a></li>
         </ul>
     </nav>
-
     <!--cabeçalho da página-->
     <header>
         <h1>Comunica com a nossa equipa</h1>
     </header>
-
-
-
 
     <main>
         <h2>Pokémons em falta no nosso site</h2>
@@ -57,7 +61,7 @@
 
         <!-- Formulário de Pokémons -->
         <div class="container">
-            <form id="formpokemons">
+            <form id="formpokemons" onsubmit="enviarDados(event)">
                 <div class="row">
                     <!-- Nome do Pokémons -->
                     <div class="col-25">
@@ -103,7 +107,7 @@
                 </div>
             </form>
         </div>
-
+        <script src="scripts/form.js"></script>
 
 
         <h2>Onde nos podes encontrar?</h2>
@@ -111,8 +115,7 @@
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10659.968109456815!2d-8.641950962809368!3d40.64729944811099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23994d8a9da6dd%3A0x202298f6500b114b!2sPokeBox!5e1!3m2!1spt-PT!2spt!4v1719927270239!5m2!1spt-PT!2spt"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         -->
 
         <!--mapa do Leaflet -->
@@ -126,11 +129,10 @@
                 }).addTo(map);
 
                 L.marker([40.64544, -8.64408]).addTo(map)
-                    .bindPopup('Pokebox') //Nome pretendido
+                    .bindPopup('Pokebox')
                     .openPopup();
             </script>
         </div>
-        
 
         <!-- A nossa equipa wm 5 colunas -->
         <h2>A nossa equipa</h2>
@@ -142,7 +144,8 @@
                         <h2>Jane Doe</h2>
                         <p class="title">CEO & Founder</p>
                         <p></p>
-                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button
+                                    class="button-equipa">LinkedIn</button></a></p>
                     </div>
                 </div>
             </div>
@@ -154,7 +157,8 @@
                         <h2>Mike Ross</h2>
                         <p class="title">Art Director</p>
                         <p></p>
-                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button
+                                    class="button-equipa">LinkedIn</button></a></p>
                     </div>
                 </div>
             </div>
@@ -166,7 +170,8 @@
                         <h2>Mike Ross</h2>
                         <p class="title">Art Director</p>
                         <p></p>
-                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button
+                                    class="button-equipa">LinkedIn</button></a></p>
                     </div>
                 </div>
             </div>
@@ -178,7 +183,8 @@
                         <h2>Mike Ross</h2>
                         <p class="title">Art Director</p>
                         <p></p>
-                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button
+                                    class="button-equipa">LinkedIn</button></a></p>
                     </div>
                 </div>
             </div>
@@ -190,45 +196,44 @@
                         <h2>John Doe</h2>
                         <p class="title">Designer</p>
                         <p></p>
-                        <p><a href='https://www.linkedin.com/' target="_blank"><button class="button-equipa">LinkedIn</button></a></p>
+                        <p><a href='https://www.linkedin.com/' target="_blank"><button
+                                    class="button-equipa">LinkedIn</button></a></p>
                     </div>
                 </div>
             </div>
         </div>
-        
 
-    </main>
 
-    <!--rodapé-->
-    <footer>
-        <p class="center">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (<em>Client-side</em>)
-        </p>
-
-        <div class="grid-container-footer">
-            <div class="grid-itemfooter">
-                <p class="bold">Redes Sociais</p>
-                <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
-                <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
-                <p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
+        <!--rodapé-->
+        <footer>
+            <div class="grid-container-footer">
+                <div class="grid-itemfooter">
+                    <p class="bold">Redes Sociais</p>
+                    <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                    <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                    <p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
+                </div>
+                <div class="grid-itemfooter">
+                    <p class="bold">Menu do site</p>
+                    <p><a href="index.html">Início</a></p>
+                    <p><a href="historia.html">História</a></p>
+                    <p><a href="galeria.html">Galeria</a></p>
+                    <p><a href="contactos.html">Contactos</a></p>
+                </div>
+                <div class="grid-itemfooter">
+                    <p class="bold">Ligações úteis</p>
+                    <p><a href="https://www.citeforma.pt/" target="_blank">Citeforma</a></p>
+                    <p><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+                </div>
+                <div class="grid-itemfooter">
+                    <p class="bold">Contactos</p>
+                    <p>Morada</p>
+                    <p>Telefone</p>
+                </div>
             </div>
-            <div class="grid-itemfooter">
-                <p class="bold">Menu do site</p>
-                <p><a href="index.html">Início</a></p>
-                <p><a href="historia.html">História</a></p>
-                <p><a href="contactos.html">Contactos</a></p>
-            </div>
-            <div class="grid-itemfooter">
-                <p class="bold">Ligações úteis</p>
-                <p><a href="https://www.citeforma.pt/" target="_blank">Citeforma</a></p>
-                <p><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
-            </div>
-            <div class="grid-itemfooter">
-                <p class="bold">Contactos</p>
-                <p>Morada</p>
-                <p>Telefone</p>
-            </div>
-        </div>
-    </footer>
+            <p class="center branco">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (<em>Client-side</em>)
+            </p>
+        </footer>
 </body>
 
 </html>

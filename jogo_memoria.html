@@ -2,7 +2,7 @@
 <html lang="pt-pt"> <!--idioma-->
 
 <head>
-    <meta charset="UTF-8"> <!-- Codificação em charset UTF-8 -->
+    <meta charset="utf-8"> <!-- Codificação em charset UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--responsividade - escala 100%-->
     <title>Salão de Pokémons</title> <!-- título do separador -->
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- ligação à folha de estilos -->
@@ -12,14 +12,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">    
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <!--jogo de Pokemons -->
+    <script src="scripts/jogopokemon.js" defer></script>
 </head>
 
 <body>
     <img src="img/logo.png">
+
     <!-- Barra de navegação -->
     <nav>
         <ul>
@@ -46,35 +50,23 @@
     </nav>
     <!--cabeçalho da página-->
     <header>
-        <h1>Bulbasaur</h1>
+        <h1>Jogo da memória</h1>
     </header>
-
     <main>
-        <p class="center"><img src="img/bulbasaur.jpg" class="responsive"></p>
-        <br>
+     
+        <h2>Jogo da memória com cartas de Pokémons</h2>
+        <div id="tabuleiro">
+            <!-- As cartas serão adicionadas aqui pelo JavaScript -->
+        </div>
+        <div id="controlos">
+            <button onclick="reiniciarJogo()" class="botao">Novo Jogo</button>
+            <span id="jogadas">Jogadas: 0</span>
+            <span id="pontos">Pontuação: 100</span>
+            <span id="vitorias">Vitórias: 0</span>
+            <span id="derrotas">Derrotas: 0</span>
+        </div>
+        <script src="jogopokemon.js"></script>
 
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>Tipo</th>
-                <th>Espécie</th>
-                <th>Altura</th>
-                <th>Peso</th>
-                <th>Habilidades</th>
-                <th>Origem do nome</th>
-            </tr>
-            <tr>
-                <td>Bulbasaur</td>
-                <td>GRASS, POISON</td>
-                <td>Seed Pokémon</td>
-                <td>0.7 m</td>
-                <td>6.9 kg</td>
-                <td>Overgrow</td>
-                <td><em>bulb</em> (tipo de planta) <br>
-                    saur (lagarto)</td>
-            </tr>
-        </table>
-        <p></p>
     </main>
 
     <!--rodapé-->

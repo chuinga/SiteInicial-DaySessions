@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--responsividade - escala 100%-->
     <title>Salão de Pokémons</title> <!-- título do separador -->
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- ligação à folha de estilos -->
+    <script src="scripts/imagecomparison.js"></script>
 
     <!--favicon -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
@@ -17,8 +18,7 @@
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <!--scripts-->
-    <script src="scripts/imagecomparison.js"></script>
+
 </head>
 
 <body>
@@ -37,18 +37,24 @@
             </li>
             <li><a href="historia.html">História</a></li>
             <li><a href="galeria.html">Galeria</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Jogos</a>
+                <div class="dropdown-content">
+                    <a href="adivinhar_numero.html">Adivinhar</a>
+                    <a href="quiz.html">Quiz</a>
+                    <a href="jogo_memoria.html">Memória</a>
+                </div>
+            </li>
             <li><a href="contactos.html">Contactos</a></li>
         </ul>
     </nav>
+
     <!--cabeçalho da página-->
     <header>
         <h1>Como capturar o seu Pokémon?</h1>
     </header>
 
     <main>
-        <!--
-        <p class="center"><img src="img/bola.jpg"></p>
--->
         <br>
         <div class="centrarimagens">
             <!-- Image Comparison Slider - W3schools -->
@@ -65,17 +71,17 @@
         <script>initComparisons();</script>
 
 
-
+        <!-- Galeria de imagens -->
         <h2> Primeira Geração</h2>
         <div class="flex-container-galeria">
             <div><a href="pikachu.html"><img src="img/pikachu.jpg" class="imagenspokemons"></a></div>
             <div><a href="bulbasaur.html"><img src="img/bulbasaur.jpg" class="imagenspokemons"></a></div>
             <div><a href="#"><img src="img/magikarp.png" class="imagenspokemons"></a></div>
             <div><a href="#"><img src="img/charmander.jpg" class="imagenspokemons"></a></div>
-            <div><a href="#"><img src="img/pokemon.jpg" class="imagenspokemons"></a></div>
-            <div><a href="#"><img src="img/pokemon.jpg" class="imagenspokemons"></a></div>
-            <div><a href="#"><img src="img/pokemon.jpg" class="imagenspokemons"></a></div>
         </div>
+
+
+
         <h2>Segunda Geração</h2>
         <ul>
             <li>Chikorita</li>
@@ -86,9 +92,6 @@
 
     <!------rodapé-------->
     <footer>
-        <p class="center">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (<em>Client-side</em>)
-        </p>
-
         <div class="grid-container-footer">
             <div class="grid-itemfooter">
                 <p class="bold">Redes Sociais</p>
@@ -100,6 +103,7 @@
                 <p class="bold">Menu do site</p>
                 <p><a href="index.html">Início</a></p>
                 <p><a href="historia.html">História</a></p>
+                <p><a href="galeria.html">Galeria</a></p>
                 <p><a href="contactos.html">Contactos</a></p>
             </div>
             <div class="grid-itemfooter">
@@ -113,6 +117,8 @@
                 <p>Telefone</p>
             </div>
         </div>
+        <p class="center branco">Formação | Citeforma 2024 | UFCD 5414 Programação para a WEB - cliente (<em>Client-side</em>)
+        </p>
     </footer>
 </body>
 
